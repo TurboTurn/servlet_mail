@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gb2312">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	body{
+		background-color: #f6f6f6;
+		
+	}
+	a{
+	color:white;
+	text-decoration:none; 
+	font-family: "Microsoft YaHei";
+	 display: block; 
+	 border-radius:5px;
+	 background: #4b7ebd;
+	}
+	a:HOVER {	
+	background: #004890;
+	border-radius:5px;
+	}
+	li{ float: left;line-height: 50px;text-align: center; 
+	 width: 150px;border-radius:5px;
+	border-right: solid 1px white;border-bottom: solid 1px white;}
+	ul{
+	list-style-type: none;
+	margin-top: 50px
+	}
+</style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	function change(e){
+		$("a").css("background","#4b7ebd");
+		e.style.background="#004890";
+	}
+</script>
+<body>
+<ul>
+<li><a onclick="change(this)" href="sendmail.jsp" target="mainFrame">发邮件</a></li>
+<li><a onclick="change(this)" href="receivemail.jsp" target="mainFrame">收件箱</a></li>
+<li><a onclick="change(this)" href="contact.jsp" target="mainFrame">通讯录</a></li>
+<li><a onclick="change(this)" href="sendbox.jsp" target="mainFrame">已发送</a></li>
+<li><a onclick="change(this)" href="update.jsp" target="mainFrame">修改资料</a></li>
+</ul>
+</body>
+</html>
